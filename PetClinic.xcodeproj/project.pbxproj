@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80B2032D182E99FD0092017A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B2032C182E99FD0092017A /* Foundation.framework */; };
+		80B2032F182E99FD0092017A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B2032E182E99FD0092017A /* CoreGraphics.framework */; };
+		80B20331182E99FD0092017A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B20330182E99FD0092017A /* UIKit.framework */; };
+		80B20337182E99FD0092017A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80B20335182E99FD0092017A /* InfoPlist.strings */; };
+		80B20339182E99FD0092017A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B20338182E99FD0092017A /* main.m */; };
+		80B2033D182E99FD0092017A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B2033C182E99FD0092017A /* AppDelegate.m */; };
+		80B20340182E99FD0092017A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B2033E182E99FD0092017A /* Main.storyboard */; };
+		80B20343182E99FD0092017A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B20342182E99FD0092017A /* ViewController.m */; };
+		80B20345182E99FD0092017A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80B20344182E99FD0092017A /* Images.xcassets */; };
+		80B2034C182E99FD0092017A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B2034B182E99FD0092017A /* XCTest.framework */; };
+		80B2034D182E99FD0092017A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B2032C182E99FD0092017A /* Foundation.framework */; };
+		80B2034E182E99FD0092017A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B20330182E99FD0092017A /* UIKit.framework */; };
+		80B20356182E99FD0092017A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80B20354182E99FD0092017A /* InfoPlist.strings */; };
+		80B20358182E99FD0092017A /* PetClinicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B20357182E99FD0092017A /* PetClinicTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80B2034F182E99FD0092017A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80B20321182E99FD0092017A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80B20328182E99FD0092017A;
+			remoteInfo = PetClinic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80B20329182E99FD0092017A /* PetClinic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetClinic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80B2032C182E99FD0092017A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		80B2032E182E99FD0092017A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		80B20330182E99FD0092017A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		80B20334182E99FD0092017A /* PetClinic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PetClinic-Info.plist"; sourceTree = "<group>"; };
+		80B20336182E99FD0092017A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80B20338182E99FD0092017A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80B2033A182E99FD0092017A /* PetClinic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PetClinic-Prefix.pch"; sourceTree = "<group>"; };
+		80B2033B182E99FD0092017A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		80B2033C182E99FD0092017A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		80B2033F182E99FD0092017A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80B20341182E99FD0092017A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		80B20342182E99FD0092017A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		80B20344182E99FD0092017A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		80B2034A182E99FD0092017A /* PetClinicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetClinicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80B2034B182E99FD0092017A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		80B20353182E99FD0092017A /* PetClinicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PetClinicTests-Info.plist"; sourceTree = "<group>"; };
+		80B20355182E99FD0092017A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80B20357182E99FD0092017A /* PetClinicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PetClinicTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80B20326182E99FD0092017A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80B2032F182E99FD0092017A /* CoreGraphics.framework in Frameworks */,
+				80B20331182E99FD0092017A /* UIKit.framework in Frameworks */,
+				80B2032D182E99FD0092017A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80B20347182E99FD0092017A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80B2034C182E99FD0092017A /* XCTest.framework in Frameworks */,
+				80B2034E182E99FD0092017A /* UIKit.framework in Frameworks */,
+				80B2034D182E99FD0092017A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80B20320182E99FD0092017A = {
+			isa = PBXGroup;
+			children = (
+				80B20332182E99FD0092017A /* PetClinic */,
+				80B20351182E99FD0092017A /* PetClinicTests */,
+				80B2032B182E99FD0092017A /* Frameworks */,
+				80B2032A182E99FD0092017A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80B2032A182E99FD0092017A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80B20329182E99FD0092017A /* PetClinic.app */,
+				80B2034A182E99FD0092017A /* PetClinicTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80B2032B182E99FD0092017A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80B2032C182E99FD0092017A /* Foundation.framework */,
+				80B2032E182E99FD0092017A /* CoreGraphics.framework */,
+				80B20330182E99FD0092017A /* UIKit.framework */,
+				80B2034B182E99FD0092017A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80B20332182E99FD0092017A /* PetClinic */ = {
+			isa = PBXGroup;
+			children = (
+				80B2033B182E99FD0092017A /* AppDelegate.h */,
+				80B2033C182E99FD0092017A /* AppDelegate.m */,
+				80B2033E182E99FD0092017A /* Main.storyboard */,
+				80B20341182E99FD0092017A /* ViewController.h */,
+				80B20342182E99FD0092017A /* ViewController.m */,
+				80B20344182E99FD0092017A /* Images.xcassets */,
+				80B20333182E99FD0092017A /* Supporting Files */,
+			);
+			path = PetClinic;
+			sourceTree = "<group>";
+		};
+		80B20333182E99FD0092017A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80B20334182E99FD0092017A /* PetClinic-Info.plist */,
+				80B20335182E99FD0092017A /* InfoPlist.strings */,
+				80B20338182E99FD0092017A /* main.m */,
+				80B2033A182E99FD0092017A /* PetClinic-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80B20351182E99FD0092017A /* PetClinicTests */ = {
+			isa = PBXGroup;
+			children = (
+				80B20357182E99FD0092017A /* PetClinicTests.m */,
+				80B20352182E99FD0092017A /* Supporting Files */,
+			);
+			path = PetClinicTests;
+			sourceTree = "<group>";
+		};
+		80B20352182E99FD0092017A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80B20353182E99FD0092017A /* PetClinicTests-Info.plist */,
+				80B20354182E99FD0092017A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80B20328182E99FD0092017A /* PetClinic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80B2035B182E99FD0092017A /* Build configuration list for PBXNativeTarget "PetClinic" */;
+			buildPhases = (
+				80B20325182E99FD0092017A /* Sources */,
+				80B20326182E99FD0092017A /* Frameworks */,
+				80B20327182E99FD0092017A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PetClinic;
+			productName = PetClinic;
+			productReference = 80B20329182E99FD0092017A /* PetClinic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80B20349182E99FD0092017A /* PetClinicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80B2035E182E99FD0092017A /* Build configuration list for PBXNativeTarget "PetClinicTests" */;
+			buildPhases = (
+				80B20346182E99FD0092017A /* Sources */,
+				80B20347182E99FD0092017A /* Frameworks */,
+				80B20348182E99FD0092017A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80B20350182E99FD0092017A /* PBXTargetDependency */,
+			);
+			name = PetClinicTests;
+			productName = PetClinicTests;
+			productReference = 80B2034A182E99FD0092017A /* PetClinicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80B20321182E99FD0092017A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Tekhne;
+				TargetAttributes = {
+					80B20349182E99FD0092017A = {
+						TestTargetID = 80B20328182E99FD0092017A;
+					};
+				};
+			};
+			buildConfigurationList = 80B20324182E99FD0092017A /* Build configuration list for PBXProject "PetClinic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80B20320182E99FD0092017A;
+			productRefGroup = 80B2032A182E99FD0092017A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80B20328182E99FD0092017A /* PetClinic */,
+				80B20349182E99FD0092017A /* PetClinicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80B20327182E99FD0092017A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80B20345182E99FD0092017A /* Images.xcassets in Resources */,
+				80B20337182E99FD0092017A /* InfoPlist.strings in Resources */,
+				80B20340182E99FD0092017A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80B20348182E99FD0092017A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80B20356182E99FD0092017A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80B20325182E99FD0092017A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80B20343182E99FD0092017A /* ViewController.m in Sources */,
+				80B2033D182E99FD0092017A /* AppDelegate.m in Sources */,
+				80B20339182E99FD0092017A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80B20346182E99FD0092017A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80B20358182E99FD0092017A /* PetClinicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80B20350182E99FD0092017A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80B20328182E99FD0092017A /* PetClinic */;
+			targetProxy = 80B2034F182E99FD0092017A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80B20335182E99FD0092017A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80B20336182E99FD0092017A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		80B2033E182E99FD0092017A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80B2033F182E99FD0092017A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80B20354182E99FD0092017A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80B20355182E99FD0092017A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80B20359182E99FD0092017A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		80B2035A182E99FD0092017A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80B2035C182E99FD0092017A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PetClinic/PetClinic-Prefix.pch";
+				INFOPLIST_FILE = "PetClinic/PetClinic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		80B2035D182E99FD0092017A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PetClinic/PetClinic-Prefix.pch";
+				INFOPLIST_FILE = "PetClinic/PetClinic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		80B2035F182E99FD0092017A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PetClinic.app/PetClinic";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PetClinic/PetClinic-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PetClinicTests/PetClinicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		80B20360182E99FD0092017A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PetClinic.app/PetClinic";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PetClinic/PetClinic-Prefix.pch";
+				INFOPLIST_FILE = "PetClinicTests/PetClinicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80B20324182E99FD0092017A /* Build configuration list for PBXProject "PetClinic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80B20359182E99FD0092017A /* Debug */,
+				80B2035A182E99FD0092017A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80B2035B182E99FD0092017A /* Build configuration list for PBXNativeTarget "PetClinic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80B2035C182E99FD0092017A /* Debug */,
+				80B2035D182E99FD0092017A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		80B2035E182E99FD0092017A /* Build configuration list for PBXNativeTarget "PetClinicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80B2035F182E99FD0092017A /* Debug */,
+				80B20360182E99FD0092017A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80B20321182E99FD0092017A /* Project object */;
+}
