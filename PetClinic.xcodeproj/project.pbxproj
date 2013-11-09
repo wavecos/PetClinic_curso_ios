@@ -21,6 +21,10 @@
 		80B2034E182E99FD0092017A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B20330182E99FD0092017A /* UIKit.framework */; };
 		80B20356182E99FD0092017A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80B20354182E99FD0092017A /* InfoPlist.strings */; };
 		80B20358182E99FD0092017A /* PetClinicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B20357182E99FD0092017A /* PetClinicTests.m */; };
+		80B20363182E9B310092017A /* PetClinicModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80B20361182E9B310092017A /* PetClinicModel.xcdatamodeld */; };
+		80B20366182EA1C40092017A /* Historial.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B20365182EA1C40092017A /* Historial.m */; };
+		80B20369182EA1C40092017A /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B20368182EA1C40092017A /* Pet.m */; };
+		80B2036C182EA1C40092017A /* Owner.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B2036B182EA1C40092017A /* Owner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		80B20353182E99FD0092017A /* PetClinicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PetClinicTests-Info.plist"; sourceTree = "<group>"; };
 		80B20355182E99FD0092017A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80B20357182E99FD0092017A /* PetClinicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PetClinicTests.m; sourceTree = "<group>"; };
+		80B20362182E9B310092017A /* PetClinicModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetClinicModel.xcdatamodel; sourceTree = "<group>"; };
+		80B20364182EA1C40092017A /* Historial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Historial.h; sourceTree = "<group>"; };
+		80B20365182EA1C40092017A /* Historial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Historial.m; sourceTree = "<group>"; };
+		80B20367182EA1C40092017A /* Pet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pet.h; sourceTree = "<group>"; };
+		80B20368182EA1C40092017A /* Pet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pet.m; sourceTree = "<group>"; };
+		80B2036A182EA1C40092017A /* Owner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Owner.h; sourceTree = "<group>"; };
+		80B2036B182EA1C40092017A /* Owner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Owner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +130,13 @@
 				80B20342182E99FD0092017A /* ViewController.m */,
 				80B20344182E99FD0092017A /* Images.xcassets */,
 				80B20333182E99FD0092017A /* Supporting Files */,
+				80B20361182E9B310092017A /* PetClinicModel.xcdatamodeld */,
+				80B2036A182EA1C40092017A /* Owner.h */,
+				80B2036B182EA1C40092017A /* Owner.m */,
+				80B20367182EA1C40092017A /* Pet.h */,
+				80B20368182EA1C40092017A /* Pet.m */,
+				80B20364182EA1C40092017A /* Historial.h */,
+				80B20365182EA1C40092017A /* Historial.m */,
 			);
 			path = PetClinic;
 			sourceTree = "<group>";
@@ -252,6 +270,10 @@
 				80B20343182E99FD0092017A /* ViewController.m in Sources */,
 				80B2033D182E99FD0092017A /* AppDelegate.m in Sources */,
 				80B20339182E99FD0092017A /* main.m in Sources */,
+				80B20369182EA1C40092017A /* Pet.m in Sources */,
+				80B2036C182EA1C40092017A /* Owner.m in Sources */,
+				80B20363182E9B310092017A /* PetClinicModel.xcdatamodeld in Sources */,
+				80B20366182EA1C40092017A /* Historial.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +494,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		80B20361182E9B310092017A /* PetClinicModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				80B20362182E9B310092017A /* PetClinicModel.xcdatamodel */,
+			);
+			currentVersion = 80B20362182E9B310092017A /* PetClinicModel.xcdatamodel */;
+			path = PetClinicModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 80B20321182E99FD0092017A /* Project object */;
 }
