@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8053ADEA1840E5FB002F47D7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8053ADE91840E5FB002F47D7 /* CoreData.framework */; };
 		80B2032D182E99FD0092017A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B2032C182E99FD0092017A /* Foundation.framework */; };
 		80B2032F182E99FD0092017A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B2032E182E99FD0092017A /* CoreGraphics.framework */; };
 		80B20331182E99FD0092017A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B20330182E99FD0092017A /* UIKit.framework */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8053ADE91840E5FB002F47D7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		80B20329182E99FD0092017A /* PetClinic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetClinic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B2032C182E99FD0092017A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		80B2032E182E99FD0092017A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8053ADEA1840E5FB002F47D7 /* CoreData.framework in Frameworks */,
 				80B2032F182E99FD0092017A /* CoreGraphics.framework in Frameworks */,
 				80B20331182E99FD0092017A /* UIKit.framework in Frameworks */,
 				80B2032D182E99FD0092017A /* Foundation.framework in Frameworks */,
@@ -112,6 +115,7 @@
 		80B2032B182E99FD0092017A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8053ADE91840E5FB002F47D7 /* CoreData.framework */,
 				80B2032C182E99FD0092017A /* Foundation.framework */,
 				80B2032E182E99FD0092017A /* CoreGraphics.framework */,
 				80B20330182E99FD0092017A /* UIKit.framework */,
@@ -484,6 +488,7 @@
 				80B2035D182E99FD0092017A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80B2035E182E99FD0092017A /* Build configuration list for PBXNativeTarget "PetClinicTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				80B20360182E99FD0092017A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

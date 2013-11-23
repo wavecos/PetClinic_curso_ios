@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+#import "Pet.h"
 
 @interface ViewController : UIViewController
+- (IBAction)adicionarMascota:(id)sender;
+- (IBAction)listarMascotas:(id)sender;
 
 @end

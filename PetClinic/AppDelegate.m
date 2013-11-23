@@ -10,6 +10,74 @@
 
 @implementation AppDelegate
 
+@synthesize managedObjectModel, managedObjectContext, persistentStoreCoordinator;
+
+-(NSManagedObjectContext *)managedObjectContext {
+    if (managedObjectContext != nil) {
+        return managedObjectContext;
+    }
+    
+    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+    
+    if (coordinator != nil) {
+        managedObjectContext = [[NSManagedObjectContext alloc] init];
+        
+        [managedObjectContext setPersistentStoreCoordinator:coordinator];
+    }
+    
+    return managedObjectContext;
+}
+
+-(NSManagedObjectModel *)managedObjectModel {
+    
+    if (managedObjectModel != nil) {
+        return managedObjectModel;
+    } else {
+        managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
+        return managedObjectModel;
+    }
+}
+
+-(NSPersistentStoreCoordinator *)persistentStoreCoordinator {
+    if (persistentStoreCoordinator != nil) {
+        return persistentStoreCoordinator;
+    }
+    
+    NSURL *storeUrl = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"PetClinicModel.sqlite"];
+    
+    // NSLog(@"path de la BD = %@", [storeUrl path]);
+    
+    NSError *error = nil;
+    
+    persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    
+    if (![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:nil error:&error]) {
+        NSLog(@"Unresolved Error %@, %@", error, [error userInfo]);
+        abort();
+    }
+    
+    return persistentStoreCoordinator;
+}
+
+
+- (NSURL *)applicationDocumentsDirectory
+{
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application
+{
+    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    NSError *error = nil;
+    
+    if (managedObjectContext != nil) {
+        if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
+            NSLog(@"Unresolved Error %@, %@", error, [error userInfo]);
+            abort();
+        }
+    }
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
@@ -36,11 +104,6 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
 @end
