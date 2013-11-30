@@ -30,7 +30,9 @@ NSArray *pets;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	app = [UIApplication sharedApplication].delegate;
+	  app = [UIApplication sharedApplication].delegate;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshPets) name:@"refreshPets" object:nil];
     
     [self getPets];
     
@@ -85,10 +87,29 @@ NSArray *pets;
 
 
 - (IBAction)refresh:(id)sender {
-    
-    [self getPets];
-    
-    [self.collectionView reloadData];
-    
+    [self refreshPets];
 }
+
+-(void) refreshPets {
+    [self getPets];
+    [self.collectionView reloadData];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"ViewPet"]) {
+        NSArray *idxs = [self.collectionView indexPathsForSelectedItems];
+        NSIndexPath *indexPath = idxs[0];
+        NSLog(@"Indice seleccionado : %d", indexPath.row);
+        
+        Pet *pet = pets[indexPath.row];
+        
+        PetViewController *pvc = [segue destinationViewController];
+        
+        pvc.pet = pet;
+        
+    }
+}
+
+
+
 @end

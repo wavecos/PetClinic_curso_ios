@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80182673184A2686001517CE /* PetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80182672184A2686001517CE /* PetViewController.m */; };
 		8053ADEA1840E5FB002F47D7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8053ADE91840E5FB002F47D7 /* CoreData.framework */; };
 		8053AE011840F784002F47D7 /* 112-group.png in Resources */ = {isa = PBXBuildFile; fileRef = 8053ADED1840F784002F47D7 /* 112-group.png */; };
 		8053AE021840F784002F47D7 /* 112-group@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8053ADEE1840F784002F47D7 /* 112-group@2x.png */; };
@@ -30,7 +31,7 @@
 		8053AE161840FC4A002F47D7 /* PetListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8053AE151840FC4A002F47D7 /* PetListViewController.m */; };
 		8053AE191840FC6D002F47D7 /* AgendaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8053AE181840FC6D002F47D7 /* AgendaViewController.m */; };
 		8053AE1C1840FC83002F47D7 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8053AE1B1840FC83002F47D7 /* SettingsViewController.m */; };
-		8053AE1F1840FC9F002F47D7 /* PetAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8053AE1E1840FC9F002F47D7 /* PetAddViewController.m */; };
+		8053AE1F1840FC9F002F47D7 /* PetAddEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8053AE1E1840FC9F002F47D7 /* PetAddEditViewController.m */; };
 		8053AE22184103EB002F47D7 /* PetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8053AE21184103EB002F47D7 /* PetCell.m */; };
 		8053AE24184113CA002F47D7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8053AE23184113CA002F47D7 /* MobileCoreServices.framework */; };
 		80B2032D182E99FD0092017A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B2032C182E99FD0092017A /* Foundation.framework */; };
@@ -64,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80182671184A2686001517CE /* PetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetViewController.h; sourceTree = "<group>"; };
+		80182672184A2686001517CE /* PetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetViewController.m; sourceTree = "<group>"; };
 		8053ADE91840E5FB002F47D7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8053ADED1840F784002F47D7 /* 112-group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "112-group.png"; sourceTree = "<group>"; };
 		8053ADEE1840F784002F47D7 /* 112-group@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "112-group@2x.png"; sourceTree = "<group>"; };
@@ -90,8 +93,8 @@
 		8053AE181840FC6D002F47D7 /* AgendaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaViewController.m; sourceTree = "<group>"; };
 		8053AE1A1840FC83002F47D7 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		8053AE1B1840FC83002F47D7 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
-		8053AE1D1840FC9F002F47D7 /* PetAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetAddViewController.h; sourceTree = "<group>"; };
-		8053AE1E1840FC9F002F47D7 /* PetAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetAddViewController.m; sourceTree = "<group>"; };
+		8053AE1D1840FC9F002F47D7 /* PetAddEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetAddEditViewController.h; sourceTree = "<group>"; };
+		8053AE1E1840FC9F002F47D7 /* PetAddEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetAddEditViewController.m; sourceTree = "<group>"; };
 		8053AE20184103EB002F47D7 /* PetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetCell.h; sourceTree = "<group>"; };
 		8053AE21184103EB002F47D7 /* PetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetCell.m; sourceTree = "<group>"; };
 		8053AE23184113CA002F47D7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -247,10 +250,12 @@
 				8053AE181840FC6D002F47D7 /* AgendaViewController.m */,
 				8053AE1A1840FC83002F47D7 /* SettingsViewController.h */,
 				8053AE1B1840FC83002F47D7 /* SettingsViewController.m */,
-				8053AE1D1840FC9F002F47D7 /* PetAddViewController.h */,
-				8053AE1E1840FC9F002F47D7 /* PetAddViewController.m */,
+				8053AE1D1840FC9F002F47D7 /* PetAddEditViewController.h */,
+				8053AE1E1840FC9F002F47D7 /* PetAddEditViewController.m */,
 				8053AE20184103EB002F47D7 /* PetCell.h */,
 				8053AE21184103EB002F47D7 /* PetCell.m */,
+				80182671184A2686001517CE /* PetViewController.h */,
+				80182672184A2686001517CE /* PetViewController.m */,
 			);
 			path = PetClinic;
 			sourceTree = "<group>";
@@ -401,11 +406,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				80B20343182E99FD0092017A /* ViewController.m in Sources */,
-				8053AE1F1840FC9F002F47D7 /* PetAddViewController.m in Sources */,
+				8053AE1F1840FC9F002F47D7 /* PetAddEditViewController.m in Sources */,
 				80B2033D182E99FD0092017A /* AppDelegate.m in Sources */,
 				8053AE191840FC6D002F47D7 /* AgendaViewController.m in Sources */,
 				80B20339182E99FD0092017A /* main.m in Sources */,
 				80B20369182EA1C40092017A /* Pet.m in Sources */,
+				80182673184A2686001517CE /* PetViewController.m in Sources */,
 				80B2036C182EA1C40092017A /* Owner.m in Sources */,
 				80B20363182E9B310092017A /* PetClinicModel.xcdatamodeld in Sources */,
 				8053AE1C1840FC83002F47D7 /* SettingsViewController.m in Sources */,

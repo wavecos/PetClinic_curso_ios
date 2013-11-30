@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "Pet.h"
 #import "PetCell.h"
+#import "PetViewController.h"
 
 @interface PetListViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 - (IBAction)refresh:(id)sender;

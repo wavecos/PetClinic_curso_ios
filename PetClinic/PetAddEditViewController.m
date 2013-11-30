@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Tekhne. All rights reserved.
 //
 
-#import "PetAddViewController.h"
+#import "PetAddEditViewController.h"
 
-@interface PetAddViewController ()
+@interface PetAddEditViewController ()
 
 @end
 
-@implementation PetAddViewController
+@implementation PetAddEditViewController
 
 AppDelegate *app;
 
@@ -30,6 +30,11 @@ AppDelegate *app;
     [super viewDidLoad];
     // Obteniendo el AppDelegate de la Aplicacion (solo existe una instancia)
     app = [UIApplication sharedApplication].delegate;
+    
+    if (self.editMode) {
+        [self loadPet];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,8 +44,14 @@ AppDelegate *app;
 }
 
 - (IBAction)save:(id)sender {
+
+    Pet *pet;
     
-    Pet *pet = [NSEntityDescription insertNewObjectForEntityForName:@"Pet" inManagedObjectContext:app.managedObjectContext];
+    if (self.editMode) {
+        pet = self.pet;
+    } else {
+        pet = [NSEntityDescription insertNewObjectForEntityForName:@"Pet" inManagedObjectContext:app.managedObjectContext];
+    }
     
     pet.name = self.txtName.text;
     //pet.birthdate = self.txtBirthdate.text;
@@ -57,6 +68,8 @@ AppDelegate *app;
     if (error) {
         // Alert View .....
     }
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"refreshPets" object:self.pet];
     
     [self dismissViewControllerAnimated:YES completion:nil];
     
@@ -142,4 +155,15 @@ AppDelegate *app;
 //    
     
 }
+
+-(void) loadPet {
+    self.imgPhoto.image = [UIImage imageWithData:self.pet.photo];
+    self.txtName.text = self.pet.name;
+    self.txtWeight.text = [self.pet.weight stringValue];
+    // Completar ....
+    
+}
+
+
+
 @end

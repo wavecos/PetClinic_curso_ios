@@ -11,7 +11,11 @@
 #import "AppDelegate.h"
 #import "Pet.h"
 
-@interface PetAddViewController : UIViewController <UIImagePickerControllerDelegate, UIPopoverControllerDelegate, UINavigationControllerDelegate>
+@interface PetAddEditViewController : UIViewController <UIImagePickerControllerDelegate, UIPopoverControllerDelegate, UINavigationControllerDelegate>
+
+@property (nonatomic) BOOL editMode;
+@property (nonatomic, strong) Pet *pet;
+
 
 @property (weak, nonatomic) IBOutlet UIImageView *imgPhoto;
 @property (weak, nonatomic) IBOutlet UITextField *txtName;
